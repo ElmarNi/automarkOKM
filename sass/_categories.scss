@@ -1,0 +1,44 @@
+#categories{
+    background-color: #f0f2f6;
+    h1{
+        margin-bottom: 40px;
+    }
+    .item{
+        background-image: url(img/econom.jpg);
+        height: 200px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        border-radius: 8px;
+        box-shadow: 0 0 4px rgba(92, 95, 100, .2);
+        transition: all .3s ease;
+        p{
+            position: absolute;
+            left: 20px;
+            bottom: 15px;
+            margin: 0;
+            font-size: 19px;
+            color: white;
+            z-index: 5;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: black;
+            transition: all .3s ease;
+            opacity: .4;
+            border-radius: 8px;
+        }
+        &:hover{
+            box-shadow: 0 10px 30px rgba(92, 95, 100, .3);
+            &::after{
+                opacity: .2;
+            }
+        }
+    }
+}

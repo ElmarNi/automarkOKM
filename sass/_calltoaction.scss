@@ -1,0 +1,30 @@
+#calltoaction{
+    background-color: #f0f2f6;
+    h3{
+        font-size: 27px;
+        font-weight: 700;
+        margin: 0;
+    }
+    p{
+        font-size: 16px;
+        margin: 0;
+    }
+    a{
+        display: inline-block;
+        background: rgba($mainColor, $alpha: .8);
+        transition: all .3s ease;
+        padding: 20px 40px;
+        border-radius: 100px;
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+        &:hover{
+            background: rgba($mainColor, $alpha: 1.0);
+        }
+    }
+}
+@media (max-width: 767.98px){
+    #calltoaction img{
+        width: 100px;
+    }
+}

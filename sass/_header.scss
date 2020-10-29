@@ -1,0 +1,138 @@
+header{
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    height: 60px;
+    .logo{
+        img{
+            height: 40px;
+            width: auto;
+        }
+    }
+    .weCallU{
+        a{
+            color: black;
+            transition: all .3s ease;
+            padding: 10px;
+            img{
+                transform: translateY(-2px) rotate(0deg);
+                transition: all .3s ease;
+            }
+            span{
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    height: 2px;
+                    background-color: black;
+                    width: 106%;
+                    left: -3%;
+                    transition: all .3s ease;
+                }
+            }
+            &:hover{
+                color: $mainColor;
+                span{
+                    &::after{
+                        width: 0%;
+                    }
+                }
+                img{
+                    transform: translateY(-2px) rotate(360deg);
+                }
+            }
+        }
+    }
+}
+#large-screens{
+    -webkit-box-shadow: 0px 20px 20px 0px rgba(18, 25, 38, 0.1);
+    box-shadow: 0px 20px 20px 0px rgba(18, 25, 38, 0.1);
+    .menu{
+        ul{
+            list-style: none;
+            li{
+                margin: 0 10px;
+                a{
+                    padding: 10px;
+                    display: inline-block;
+                    color: black;
+                    transition: all .3s ease;
+                    span{
+                        position: relative;
+                        &::before, &::after{
+                            position: absolute;
+                            bottom: -5px;
+                            height: 2px;
+                            background-color: rgba($mainColor, $alpha: .8);
+                            content: '';
+                            transition: all .3s ease;
+                        }
+                        &::before{
+                            left: 50%;
+                            right: 100%;
+                        }
+                        &::after{
+                            left: 100%;
+                            right: 50%;
+                        }
+                    }
+                    &:hover{
+                        color: $mainColor;
+                        span{
+                            &::before{
+                                right: -8%;
+                            }
+                            &::after{
+                                left: -8%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#small-screens{
+    -webkit-box-shadow: 0px 20px 20px 0px rgba(18, 25, 38, 0.1);
+    box-shadow: 0px 20px 20px 0px rgba(18, 25, 38, 0.1);
+    .open-menu{
+        color: black;
+        i{
+            font-size: 20px;
+        }
+    }
+    .weCallU a{
+        font-size: 12px;
+    }
+    .menu{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        -webkit-box-shadow: 0px 20px 20px 0px rgba(18, 25, 38, 0.1);
+        box-shadow: 0px 20px 20px 0px rgba(18, 25, 38, 0.1);
+    }
+    nav{
+        width: 100%;
+        padding: 15px 0;
+        ul{
+            list-style: none;
+            li{
+                margin: 10px 0;
+                border-bottom: 1.7px solid #00000014;
+                a{
+                    font-size: 18px;
+                    color: black;
+                    padding: 5px 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

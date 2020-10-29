@@ -1,0 +1,94 @@
+footer{
+    .menu{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #e6ecf2;
+        ul{
+            list-style: none;
+            li{
+
+                a{
+                    display: inline-block;
+                    padding: 10px 15px;
+                    color: #7f8c8d;
+                    transition: all .3s ease;
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+    .content{
+        padding-top: 40px;
+        padding-bottom: 60px;
+        .top{
+            .left, .right{
+                p{
+                    font-size: 14px;
+                    color: #282828;
+                    margin: 0;
+                }
+            }
+            .middle{
+                border-left: 1px solid #e6ecf2;
+                border-right: 1px solid #e6ecf2;
+                .social-icons{
+                    list-style: none;
+                    li{
+                        a{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 100%;
+                            background-color: #d8d9da;
+                            color: white;
+                            transition: all .3s ease;
+                            i{
+                                font-size: 20px;
+                            }
+                            &:hover{
+                                background-color: $mainColor;
+                            }
+                        }
+                    }
+                }
+            }
+            .right{
+                a{
+                    color: #282828;
+                    transition: all .3s ease;
+                    font-weight: bold;
+                    position: relative;
+                    padding: 10px 0;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: 5px;
+                        height: 2px;
+                        background-color: black;
+                        width: 106%;
+                        left: -3%;
+                        transition: all .3s ease;
+                    }
+                    &:hover{
+                        &::after{
+                            width: 0%;
+                        }
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+        .bottom{
+            p{
+                font-size: 11px;
+                color: rgba(0, 0, 0, 0.48);
+                margin: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+}

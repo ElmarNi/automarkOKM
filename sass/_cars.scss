@@ -1,0 +1,62 @@
+#cars{
+    h1{
+        margin-bottom: 40px;
+    }
+    .image-wrapper{
+        overflow: hidden;
+    }
+    img{
+        transform: scale(1.0);
+        transition: all .3s ease;
+    }
+    .item{
+        border-radius: 6px;
+        transition: all .3s ease;
+        overflow: hidden;
+        .content{
+            padding: 18px;
+            background: #f3f3f3;
+            .heading{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                span{
+                    font-size: 14px;
+                    color: black;
+                }
+                h1{
+                    font-size: 18px;
+                    color: black;
+                    font-weight: 700;
+                    margin: 0;
+                    span{
+                        font-weight: 400;
+                        font-size: inherit;
+                    }
+                }
+            }
+            .stars{
+                span{
+                    font-size: 14px;
+                    color: rgb(139, 149, 161);
+                }
+            }
+            .short-info{
+                margin-top: 20px;
+                p{
+                    margin: 0;
+                    font-size: 14px;
+                    color: rgba(0,0,0,0.6);
+                    text-align: justify;
+                }
+            }
+        }
+        &:hover{
+            box-shadow: 0 2px 18px 0 rgba(0,0,0,0.09);
+            img{
+                transform: scale(1.07);
+            }
+        }
+    }
+}
